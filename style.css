@@ -1,0 +1,32 @@
+body {
+    padding: 20px;
+}
+#puerto-rico {
+    width: 1235px;
+    height: 650px;
+    background: repeating-linear-gradient(180deg, #ce1126, #ce1126 150px, white 80px, white 250px);
+    box-shadow: 10px 10px 15px 0px #bbbbbb;
+    position: relative;
+    overflow: hidden;
+}
+#puerto-rico::before {
+    position: absolute;
+    content: " ";
+    width: 608px;
+    height:608px;
+    left: -5px;
+    top: 20px;
+    background: #0038a8;
+    transform: translate(-50%) rotate(-45deg) skew(15deg,15deg);
+    box-shadow: 0 0 0 13px #0038a8;
+}
+#puerto-rico::after {
+    position: absolute;
+    content: "★";
+    font-size: 280px;
+    font-family: 'DejaVu Sans', sans-serif;
+    line-height: 1%;
+    color: white;
+    left: 60px;
+    top: 50%;
+  }
